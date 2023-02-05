@@ -1,13 +1,12 @@
 {
-  "name": "@mikosoft/dodo-skel",
+  "name": "@mikosoft/dodo-www",
   "version": "1.0.0",
   "title": "DoDo Skel",
-  "description": "Skeleton code for a new project made in DoDo Framework.",
-  "author": "Mikodanic Sasa <smikodanic@gmail.com>",
+  "description": "The Mikosoft DoDo Framework official web site.",
   "homepage": "http://dodo.mikosoft.info",
   "license": "MIT",
   "keywords": [
-    "dodo skel"
+    "dodo www"
   ],
   "type": "module",
   "scripts": {
