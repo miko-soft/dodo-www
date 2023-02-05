@@ -1,0 +1,29 @@
+{
+  "name": "@mikosoft/dodo-skel",
+  "version": "1.0.0",
+  "title": "DoDo Skel",
+  "description": "Skeleton code for a new project made in DoDo Framework.",
+  "author": "Mikodanic Sasa <smikodanic@gmail.com>",
+  "homepage": "http://dodo.mikosoft.info",
+  "license": "MIT",
+  "keywords": [
+    "dodo skel"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev-inst": "rm -rf node_modules && rm package-lock.json && npm install",
+    "views": "node sys/compileViews.js",
+    "parcel": "parcel src/app.html --dist-dir dist --port 3333 | cat",
+    "dev": "node sys/compileViews.js & npx parcel src/app.html --dist-dir dist --port 3333 --no-cache",
+    "prod-inst": "rm -rf node_modules && rm package-lock.json && npm install --production",
+    "prod": "pm2 start server --name weber-app"
+  },
+  "dependencies": {
+    "@mikosoft/dodo": "file:../dodo"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "chokidar": "^3.5.3",
+    "parcel": "^2.8.3"
+  }
+}
